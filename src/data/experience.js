@@ -36,15 +36,15 @@ export const experienceJourneyData = [
     ]
   },
   {
-    phase: "AI & Data-Related Workflows",
-    title: "AI Workflows, Prompt Engineering & Data Annotation",
+    phase: "AI & Modern Tooling",
+    title: "AI Integration & Prompt Engineering",
     status: "Expanding Skillset",
-    description: "Applying AI workflows, prompt engineering, and structured data handling to optimize software delivery, automated content workflows, and intelligent application features.",
-    tags: ["Prompt Engineering", "Data Annotation", "AI Integration", "Workflow Optimization"],
+    description: "Applying modern AI workflows and prompt engineering to optimize software delivery and build intelligent application features.",
+    tags: ["Prompt Engineering", "AI API Integration", "Workflow Optimization"],
     details: [
       "Leveraging advanced prompt design techniques for code analysis, task decomposition, and content generation.",
-      "Working with structured datasets, data annotation, and quality assurance workflows.",
-      "Exploring pragmatic AI API integrations to enrich web applications with intelligent capabilities."
+      "Integrating AI APIs to enrich web applications with intelligent capabilities.",
+      "Optimizing developer workflows and productivity through modern AI-assisted tooling."
     ]
   }
 ];

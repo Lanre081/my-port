@@ -4,48 +4,53 @@ import { GithubIcon } from './Icons';
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="rounded-xl bg-white border border-slate-200 overflow-hidden flex flex-col justify-between hover:border-slate-300 hover:shadow-sm transition-all duration-200">
+    <div className="rounded-2xl bg-[#1a1a1a] border border-neutral-800 overflow-hidden flex flex-col justify-between hover:border-orange-500/50 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 group">
       
       {/* Product / UI Review Thumbnail */}
-      <div className="relative aspect-video bg-slate-100 border-b border-slate-100 overflow-hidden group">
+      <div className="relative aspect-video bg-neutral-900 border-b border-neutral-800 overflow-hidden">
         <img
           src={project.image}
           alt={`${project.title} interface preview`}
-          className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-300"
+          className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500 ease-out"
           loading="lazy"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent opacity-60"></div>
       </div>
 
       {/* Content */}
-      <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
+      <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
         <div>
-          <h3 className="text-lg font-bold text-slate-900 mb-1.5 tracking-tight">
+          <h3 className="text-xl font-bold text-white mb-2.5 tracking-tight group-hover:text-orange-500 transition-colors">
             {project.title}
           </h3>
 
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-sm text-neutral-400 leading-relaxed font-light">
             {project.description}
           </p>
         </div>
 
         {/* Tech Stack */}
-        <div className="pt-2 border-t border-slate-100">
-          <p className="text-xs font-mono text-slate-500 mb-2">
-            {project.stack.join(' • ')}
-          </p>
+        <div className="pt-4 border-t border-neutral-800/60">
+          <div className="flex flex-wrap gap-2">
+            {project.stack.map((tech, idx) => (
+              <span key={idx} className="px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-xs font-mono text-orange-400/90 tracking-wide">
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Footer / Buttons */}
-      <div className="px-5 py-3.5 bg-slate-50 border-t border-slate-200/80 flex items-center justify-between gap-2 text-xs">
+      <div className="px-6 py-4 bg-neutral-900/50 border-t border-neutral-800 flex items-center justify-between gap-3 text-sm">
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md font-medium text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 hover:text-slate-900 transition-colors"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-neutral-300 bg-transparent border border-neutral-700 hover:bg-neutral-800 hover:text-white transition-colors"
         >
-          <GithubIcon className="w-3.5 h-3.5" />
-          <span>GitHub</span>
+          <GithubIcon className="w-4 h-4" />
+          <span>Source</span>
         </a>
 
         {project.hasLiveDemo && project.liveDemoUrl && (
@@ -53,10 +58,10 @@ export default function ProjectCard({ project }) {
             href={project.liveDemoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-white bg-orange-500 hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20"
           >
             <span>Live Demo</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-4 h-4" />
           </a>
         )}
       </div>

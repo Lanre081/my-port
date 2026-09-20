@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ExternalLink, Terminal, Code2 } from 'lucide-react';
+import { ArrowRight, Code2 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function Hero() {
@@ -12,117 +12,112 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-28 pb-16 md:pt-36 md:pb-24 border-b border-slate-100">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+    <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-32 border-b border-neutral-900 relative overflow-hidden">
+      
+      {/* Subtle ambient glow in the background */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Two-Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Information & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
             {/* Small Label */}
-            <div className="text-xs font-mono font-semibold tracking-wider text-blue-600 uppercase mb-3.5">
-              SOFTWARE ENGINEER
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-orange-500 text-xs font-mono font-medium tracking-wide uppercase mb-6">
+              <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+              Available For Work
             </div>
 
             {/* Large Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18] mb-4">
-              Building practical software for real-world problems.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+              Software Engineer building scalable digital products and business solutions.
             </h1>
 
             {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mb-7">
-              I'm Tajudeen Ahmad, a software engineer focused on building modern web applications, backend systems, and APIs.
+            <p className="text-lg sm:text-xl text-neutral-400 leading-relaxed max-w-xl mb-10 font-light">
+              Hi, I'm <strong className="text-white font-medium">Tajudeen Ahmad</strong>, a full-stack developer specialized in modern web applications, robust backend systems, and high-performance APIs.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-3.5">
+            <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
                 onClick={handleScrollToProjects}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm bg-slate-900 hover:bg-slate-800 text-white transition-colors shadow-xs"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-orange-500 hover:bg-orange-600 text-white transition-all shadow-lg shadow-orange-500/20"
               >
-                <span>View Projects</span>
-                <ArrowDown className="w-4 h-4" />
-              </a>
-
-              <a
-                href="https://github.com/Lanre081"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 transition-colors"
-              >
-                <GithubIcon className="w-4 h-4" />
-                <span>GitHub</span>
+                <span>View My Work</span>
+                <ArrowRight className="w-4 h-4" />
               </a>
 
               <a
                 href="https://wa.me/2348149682515"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm bg-green-500 hover:bg-green-600 text-white transition-colors shadow-xs"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-transparent hover:bg-neutral-900 text-neutral-300 border border-neutral-800 transition-colors"
               >
-                <span>Let's Talk</span>
+                <span>Let's Work Together</span>
               </a>
             </div>
 
           </div>
 
           {/* Right Column: Subtle Developer-Themed Visual */}
-          <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-md rounded-xl bg-slate-900 text-slate-200 border border-slate-800 shadow-md overflow-hidden text-xs font-mono">
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="w-full max-w-md rounded-2xl bg-neutral-950/80 backdrop-blur-sm border border-neutral-800 shadow-2xl overflow-hidden font-mono text-sm relative group">
               
               {/* Window Header */}
-              <div className="flex items-center justify-between px-3.5 py-2.5 bg-slate-950/80 border-b border-slate-800">
-                <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-rose-500/80"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-amber-500/80"></div>
-                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
-                  <span className="ml-2 text-[11px] text-slate-400">engineer.json</span>
+              <div className="flex items-center justify-between px-4 py-3 bg-neutral-900/50 border-b border-neutral-800">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-neutral-700 group-hover:bg-rose-500 transition-colors"></div>
+                  <div className="w-3 h-3 rounded-full bg-neutral-700 group-hover:bg-amber-500 transition-colors delay-75"></div>
+                  <div className="w-3 h-3 rounded-full bg-neutral-700 group-hover:bg-emerald-500 transition-colors delay-150"></div>
+                  <span className="ml-3 text-[11px] text-neutral-500 font-medium">tajudeen.ts</span>
                 </div>
-                <Code2 className="w-3.5 h-3.5 text-slate-500" />
+                <Code2 className="w-4 h-4 text-neutral-600" />
               </div>
 
               {/* Code Snippet */}
-              <div className="p-4 leading-relaxed overflow-x-auto text-slate-300 text-[11.5px]">
+              <div className="p-6 leading-relaxed overflow-x-auto text-neutral-300 text-xs sm:text-[13px]">
                 <pre>
-                  <span className="text-slate-500">// Engineering Profile</span>
+                  <span className="text-neutral-500">/**</span>
                   {'\n'}
-                  {'{'}
-                  {'\n  '}
-                  <span className="text-blue-400">"name"</span>: <span className="text-emerald-300">"Tajudeen Ahmad"</span>,
-                  {'\n  '}
-                  <span className="text-blue-400">"role"</span>: <span className="text-emerald-300">"Software Engineer"</span>,
-                  {'\n  '}
-                  <span className="text-blue-400">"location"</span>: <span className="text-emerald-300">"Nigeria"</span>,
-                  {'\n  '}
-                  <span className="text-blue-400">"focus"</span>: [
-                  <span className="text-amber-300">"Full-Stack"</span>,{' '}
-                  <span className="text-amber-300">"Backend & APIs"</span>,{' '}
-                  <span className="text-amber-300">"Databases"</span>],
-                  {'\n  '}
-                  <span className="text-blue-400">"status"</span>: <span className="text-emerald-300">"Open to opportunities"</span>
+                  <span className="text-neutral-500"> * Primary Engineering Profile</span>
                   {'\n'}
-                  {'}'}
+                  <span className="text-neutral-500"> */</span>
+                  {'\n'}
+                  <span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> = {'{'}
+                  {'\n  '}
+                  <span className="text-orange-400">name</span>: <span className="text-emerald-400">'Tajudeen Ahmad'</span>,
+                  {'\n  '}
+                  <span className="text-orange-400">role</span>: <span className="text-emerald-400">'Software Engineer'</span>,
+                  {'\n  '}
+                  <span className="text-orange-400">core</span>: [
+                  {'\n    '}
+                  <span className="text-emerald-400">'React & Node.js'</span>,
+                  {'\n    '}
+                  <span className="text-emerald-400">'PostgreSQL & REST APIs'</span>,
+                  {'\n    '}
+                  <span className="text-emerald-400">'System Architecture'</span>
+                  {'\n  '}
+                  ],
+                  {'\n  '}
+                  <span className="text-orange-400">availability</span>: <span className="text-purple-400">true</span>
+                  {'\n'}
+                  {'};'}
                 </pre>
               </div>
 
-              <div className="px-4 py-2 bg-slate-950/60 border-t border-slate-800 text-[10.5px] text-slate-400 flex items-center justify-between">
-                <span>Available for hire & contracts</span>
-                <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <div className="px-5 py-3 bg-neutral-900/30 border-t border-neutral-800 flex items-center justify-between text-[11px] text-neutral-500">
+                <span>Compiled successfully</span>
+                <span className="text-emerald-500 font-medium">Ready</span>
               </div>
 
             </div>
           </div>
 
-        </div>
-
-        {/* Stack Line under hero */}
-        <div className="mt-12 pt-6 border-t border-slate-200/80 flex items-center justify-center text-center">
-          <p className="text-xs sm:text-sm font-mono text-slate-500 font-medium">
-            React • Node.js • Express • PostgreSQL • REST APIs
-          </p>
         </div>
 
       </div>
