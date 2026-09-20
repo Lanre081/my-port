@@ -42,7 +42,17 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-neutral-900/50 text-center flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-neutral-600 font-mono">
           <p>© {new Date().getFullYear()} Tajudeen Ahmad. All rights reserved.</p>
-          <p>Built with React & Tailwind CSS.</p>
+          <p>
+            Developed by{' '}
+            <a 
+              href="https://www.alfrajdigitalsolutions.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:text-orange-400 underline decoration-orange-500/30 underline-offset-2 transition-colors font-medium"
+            >
+              Alfraj Digitals
+            </a>
+          </p>
         </div>
 
       </div>
