@@ -62,7 +62,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/Tajudeen_Ahmad_CV.pdf"
+                href="/Tajudeen_Ahmad_CV.pdf?v=2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-transparent hover:bg-neutral-900 text-neutral-300 border border-neutral-800 transition-colors"
@@ -72,7 +72,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/Tajudeen_Ahmad_CV.pdf"
+                href="/Tajudeen_Ahmad_CV.pdf?v=2"
                 download="Tajudeen_Ahmad_CV.pdf"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-transparent hover:bg-neutral-900 text-neutral-300 border border-neutral-800 transition-colors"
               >
