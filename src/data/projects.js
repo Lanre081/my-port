@@ -36,8 +36,8 @@ export const selectedProjects = [
     stack: ["React", "Node.js", "Express.js", "PostgreSQL"],
     image: "/projects/restaurant.jpg",
     githubUrl: "https://github.com/Lanre081/Restaurant-System-Management-Frontend",
-    liveDemoUrl: "",
-    hasLiveDemo: false
+    liveDemoUrl: "https://restaurant-system-management-fronte.vercel.app/",
+    hasLiveDemo: true
   },
   {
     id: "lead-capture",
