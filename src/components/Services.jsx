@@ -6,7 +6,7 @@ import {
   Globe, 
   CreditCard, 
   Wrench, 
-  CheckCircle2, 
+  ChevronRight, 
   Briefcase, 
   ArrowRight 
 } from 'lucide-react';
@@ -74,7 +74,7 @@ export default function Services() {
                   <ul className="space-y-2 text-sm text-neutral-300">
                     {service.deliverables.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                        <ChevronRight className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
                         <span className="leading-snug">{item}</span>
                       </li>
                     ))}
