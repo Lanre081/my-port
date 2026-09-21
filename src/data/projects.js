@@ -45,8 +45,8 @@ export const selectedProjects = [
     description: "An embeddable lead-capture solution that allows businesses to collect customer information through website widgets.",
     stack: ["JavaScript", "Node.js", "REST API", "SQLite/PostgreSQL"],
     image: "/projects/lead-capture.jpg",
-    githubUrl: "https://github.com/Lanre081/lead-capture-widget-platform",
-    liveDemoUrl: "",
-    hasLiveDemo: false
+    githubUrl: "https://github.com/Lanre081/Leadsynch-platform.git",
+    liveDemoUrl: "https://leadsyn-platform.vercel.app/",
+    hasLiveDemo: true
   }
 ];

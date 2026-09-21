@@ -1,5 +1,29 @@
 export const experienceJourneyData = [
   {
+    phase: "April 2026 - August 2026",
+    title: "Full Stack Engineer",
+    status: "Alfraj Digital Solutions Ltd",
+    description: "Served as a Full Stack Engineer, responsible for building and maintaining robust web applications and digital solutions.",
+    tags: ["Full-Stack Architecture", "React", "Node.js", "PostgreSQL"],
+    details: [
+      "Developed end-to-end web applications and interactive client interfaces.",
+      "Designed and implemented RESTful APIs and relational database schemas.",
+      "Collaborated with the team to deliver high-quality digital services."
+    ]
+  },
+  {
+    phase: "August 2025 - March 2026",
+    title: "Software Engineering Trainee",
+    status: "ITSKILL CENTRE",
+    description: "Completed intensive training in software engineering, focusing on modern web development technologies and best practices.",
+    tags: ["Software Engineering", "Frontend", "Backend", "Web Development"],
+    details: [
+      "Gained hands-on experience in full-stack web development.",
+      "Built practical projects using modern JavaScript frameworks and tools.",
+      "Learned core principles of software architecture and database design."
+    ]
+  },
+  {
     phase: "Current Focus & Active Engineering",
     title: "Full-Stack Software Engineering & Scalable Systems",
     status: "Active Focus",
