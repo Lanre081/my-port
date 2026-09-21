@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code2, Download } from 'lucide-react';
+import { ArrowRight, Code2, Download, Eye } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function Hero() {
@@ -59,6 +59,16 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-transparent hover:bg-neutral-900 text-neutral-300 border border-neutral-800 transition-colors"
               >
                 <span>Let's Work Together</span>
+              </a>
+
+              <a
+                href="/Tajudeen_Ahmad_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm bg-transparent hover:bg-neutral-900 text-neutral-300 border border-neutral-800 transition-colors"
+              >
+                <span>View CV</span>
+                <Eye className="w-4 h-4" />
               </a>
 
               <a
